@@ -35,14 +35,14 @@ Seamlessly connect users with their favorite meals through cutting-edge technolo
 ## 🖼️ Project Screenshots
 
 ### 1. App Info
-![App Info](https://github.com/your-username/Food/gitImages/Onboarding_01.png)
+![App Info](https://github.com/tarin-gunarathna/Food/gitImages/Onboarding_01.png)
 
 ### 2. Home Screen
-![Home Screen](https://github.com/your-username/Food/gitImages/Food-Burgers.png)
+![Home Screen](https://github.com/tarin-gunarathna/Food/gitImages/Food-Burgers.png)
 
 ### 3. Cart Management
-![Cart Management](https://github.com/your-username/Food/gitImages/EditCart.png)
+![Cart Management](https://github.com/tarin-gunarathna/Food/gitImages/EditCart.png)
 
 ### 4. Food Details
-![Food Details](https://github.com/your-username/Food/gitImages/FoodDetails_01.png)
+![Food Details](https://github.com/tarin-gunarathna/Food/gitImages/FoodDetails_01.png)
 
