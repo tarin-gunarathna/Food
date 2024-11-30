@@ -35,14 +35,14 @@ Seamlessly connect users with their favorite meals through cutting-edge technolo
 ## 🖼️ Project Screenshots
 
 ### 1. App Info
-![App Info](https://github.com/tarin-gunarathna/images/tree/main/FoodMobileApplication/Onboarding_01.png)
+![App Info](GITimages/Onboarding_01.png)
 
 ### 2. Home Screen
-![Home Screen](https://github.com/tarin-gunarathna/images/tree/main/FoodMobileApplication/Food-Burgers.png)
+![Home Screen](GITimages/Food-Burgers.png)
 
 ### 3. Cart Management
-![Cart Management](https://github.com/tarin-gunarathna/images/tree/main/FoodMobileApplication/EditCart.png)
+![Cart Management](GITimages/EditCart.png)
 
 ### 4. Food Details
-![Food Details](https://github.com/tarin-gunarathna/images/tree/main/FoodMobileApplication/FoodDetails_01.png)
+![Food Details](GITimages/FoodDetails_01.png)
 
