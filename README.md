@@ -2,6 +2,8 @@
 
 Seamlessly connect users with their favorite meals through cutting-edge technology and an intuitive UI.
 
+Figma file link - https://www.figma.com/community/file/1231521889522325040/food-delivery-app
+
 ---
 
 ## 🌟 Features
