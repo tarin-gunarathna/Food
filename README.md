@@ -30,7 +30,19 @@ Seamlessly connect users with their favorite meals through cutting-edge technolo
 5. **Order Tracking**: Keep tabs on order status and estimated delivery time.
 6. **Payment Integration**: Smooth checkout process with payment gateway support.
 
-For example:
+---
 
-```markdown
-![Loading GIF](https://media.giphy.com/media/14uXQbPS73Y3qU/giphy.gif)
+## 🖼️ Project Screenshots
+
+### 1. App Info
+![App Info](https://github.com/your-username/Food/gitImages/Onboarding_01.png)
+
+### 2. Home Screen
+![Home Screen](https://github.com/your-username/Food/gitImages/Food-Burgers.png)
+
+### 3. Cart Management
+![Cart Management](https://github.com/your-username/Food/gitImages/EditCart.png)
+
+### 4. Food Details
+![Food Details](https://github.com/your-username/Food/gitImages/FoodDetails_01.png)
+
