@@ -5,11 +5,11 @@ import AnimatedSplash from "react-native-animated-splash-screen";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useFonts } from "expo-font";
 import { Image } from "expo-image";
-import { Link } from 'expo-router';
+import { Link } from "expo-router";
 
 SplashScreen.preventAutoHideAsync();
 
-export default function App() {
+export default function index() {
   const [isAppLoaded, setIsAppLoaded] = useState(false);
 
   setTimeout(() => setIsAppLoaded(true), 3000);
@@ -62,13 +62,20 @@ export default function App() {
         </View>
         <View style={styles.buttonContainer}>
           <Link href="/onBoardTwo" style={styles.nextButton}>
-            <TouchableOpacity style={{ width: "100%" , height: "100%", justifyContent: "center", alignItems: "center"}}>
+            <TouchableOpacity
+              style={{
+                width: "100%",
+                height: "100%",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
               <Text style={styles.nextButtonText}>NEXT</Text>
             </TouchableOpacity>
           </Link>
           <Link href="/onBoardThree" style={styles.skipContainer}>
-    <Text style={styles.skipText}>Skip</Text>
-  </Link>
+            <Text style={styles.skipText}>Skip</Text>
+          </Link>
         </View>
       </SafeAreaView>
     </AnimatedSplash>
@@ -109,7 +116,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 60
+    marginBottom: 120
   },
   dot: {
     width: 10,
@@ -144,11 +151,11 @@ const styles = StyleSheet.create({
   skipContainer: {
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 10,
+    marginTop: 10
   },
   skipText: {
     fontSize: 16,
     color: "#646982",
-    fontFamily: "Sen-regular",
-  },
+    fontFamily: "Sen-regular"
+  }
 });
