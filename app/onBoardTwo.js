@@ -1,18 +1,14 @@
 import * as SplashScreen from "expo-splash-screen";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import AnimatedSplash from "react-native-animated-splash-screen";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useFonts } from "expo-font";
 import { Image } from "expo-image";
-import { Link } from 'expo-router';
+import { Link } from "expo-router";
 
 SplashScreen.preventAutoHideAsync();
 
-export default function onBoardTwo() {
-  const [isAppLoaded, setIsAppLoaded] = useState(false);
-
-  setTimeout(() => setIsAppLoaded(true), 3000);
+export default function App() {
 
   const [loaded, error] = useFonts({
     "Sen-extraBold": require("../assets/fonts/Sen-ExtraBold.ttf"),
@@ -34,44 +30,41 @@ export default function onBoardTwo() {
   }
 
   return (
-    <AnimatedSplash
-      translucent={true}
-      isLoaded={isAppLoaded}
-      logoImage={require("../assets/images/logo.png")}
-      backgroundColor={"#f3f4f6"}
-      logoHeight={150}
-      logoWidth={150}
-    >
-      {/* App Content */}
       <SafeAreaView style={styles.container}>
         <View style={styles.imageContainer}>
           <Image
-            source={require("../assets/images/getStartedPage/imageOne.png")}
+            source={require("../assets/images/getStartedPage/imageTwo.png")}
             style={styles.imagePlaceholder}
           />
         </View>
-        <Text style={styles.title}>threeeeee</Text>
+        <Text style={styles.title}>Order from choosen chef</Text>
         <Text style={styles.subtitle}>
           Get all your loved foods in one once place, you just place the order
           we do the rest
         </Text>
         <View style={styles.pagination}>
-          <View style={[styles.dot, styles.activeDot]} />
           <View style={styles.dot} />
+          <View style={[styles.dot, styles.activeDot]} />
           <View style={styles.dot} />
         </View>
         <View style={styles.buttonContainer}>
-          <Link href="/index" asChild>
-            <TouchableOpacity style={styles.nextButton}>
+          <Link href="/onBoardThree" style={styles.nextButton}>
+            <TouchableOpacity
+              style={{
+                width: "100%",
+                height: "100%",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
               <Text style={styles.nextButtonText}>NEXT</Text>
             </TouchableOpacity>
           </Link>
-          <TouchableOpacity>
+          <Link href="/onBoardThree" style={styles.skipContainer}>
             <Text style={styles.skipText}>Skip</Text>
-          </TouchableOpacity>
+          </Link>
         </View>
       </SafeAreaView>
-    </AnimatedSplash>
   );
 }
 
@@ -90,13 +83,13 @@ const styles = StyleSheet.create({
   imagePlaceholder: {
     width: 350,
     height: 350,
-    marginTop: -70
+    marginTop: -70,
+    marginBottom: 20
   },
   title: {
     fontSize: 24,
     fontFamily: "Sen-extraBold",
     textAlign: "center",
-    marginTop: -10
   },
   subtitle: {
     fontSize: 16,
@@ -109,7 +102,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 60
+    marginBottom: 120
   },
   dot: {
     width: 10,
@@ -141,10 +134,14 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: "Sen-bold"
   },
+  skipContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 10
+  },
   skipText: {
     fontSize: 16,
     color: "#646982",
-    marginBottom: -10,
     fontFamily: "Sen-regular"
   }
 });
